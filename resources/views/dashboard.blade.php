@@ -57,7 +57,7 @@
     <script>
         function updateSensorData() {
             $.ajax({
-                url: '{{ url('/sensor/latest2') }}',
+                url: '{{ url('/sensor/latest3') }}',
                 method: 'GET',
                 success: function(data) {
                     $('#temp').text(data.temp + '°C');

@@ -50,3 +50,4 @@ Route::delete('/led/{id}', [LEDDataController::class, 'destroyfromdb']);
 Route::get('/sensor', [SensorDataController::class, 'showsensortoweb'])->middleware(['auth', 'verified'])->name('sensor');
 Route::get('/sensor/latest', [SensorDataController::class, 'updatechart'])->middleware(['auth', 'verified']);
 Route::get('/sensor/latest2', [SensorDataController::class, 'updatedashboard'])->middleware(['auth', 'verified']);
+Route::get('/sensor/latest3', [SensorDataController::class, 'edgecomp'])->middleware(['auth', 'verified']);

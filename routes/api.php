@@ -22,3 +22,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::get('/led7cbfyre3ftywe7tf7iw34reyt9v3w7f973w4i7u3v7berfg974ity9i743r', [LEDDataController::class, 'sendtoesp']);
 Route::post('/sensor', [SensorDataController::class, 'sentfromesp']);
+
+Route::get('/sensor/latest4', [SensorDataController::class, 'updatedashboard']);
